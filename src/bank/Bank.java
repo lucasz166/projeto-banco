@@ -12,22 +12,24 @@ public class Bank {
         Conta c; 
         c = new Conta();
         
-        System.out.println("Saldo da conta R$:" +c.retornarSaldo());
-        
-        
-        double x;
-        System.out.println("Informe o valor para deposito: ");
-        x = sc.nextDouble();
-        
-        c.depositar(x);
-        System.out.println("Saldo da conta R$: " +c.retornarSaldo());
-        
-        System.out.println("Informe o valor do saque R$: ");
-        x = sc.nextDouble();
-        
-        c.sacar(x);
-        System.out.println("Saldo da conta após saque é R$: " +c.retornarSaldo());
-                
+        while (true) {
+       
+            System.out.println("Saldo da conta R$:" +c.retornarSaldo());
+
+
+            double x;
+            System.out.println("Informe o valor para deposito: ");
+            x = sc.nextDouble();
+
+            c.depositar(x);
+            System.out.println("Saldo da conta R$: " +c.retornarSaldo());
+
+            System.out.println("Informe o valor do saque R$: ");
+            x = sc.nextDouble();
+
+            c.sacar(x);
+            System.out.println("Saldo da conta após saque é R$: " +c.retornarSaldo());
+
+        }
     }
-    
 }
